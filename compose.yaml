@@ -1,0 +1,11 @@
+services:
+  python:
+    image: python:alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    command: sh -c "apk update && apk upgrade && exec python"
+
+# docker run --name py -v ./:/usr/src/app -it --rm python:alpine sh
