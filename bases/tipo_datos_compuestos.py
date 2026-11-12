@@ -1,3 +1,4 @@
+# En python se llaman listas, pero son arreglos, se pueden modificar, son mutables
 arreglo = ["Jony", "Ing", True, 1.70]
 
 print(arreglo)
